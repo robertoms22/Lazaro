@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 .Reserva {
     width: 100%;
     height: 100vh;
@@ -46,7 +46,8 @@
 }
 
 .Reserva-button {
-    width: 20%;
+    width: 100%;
+    max-width: 200px;
     padding: 0.75em;
     font-size: 1.2em;
     color: #fff;
@@ -82,7 +83,7 @@
     }
 
     .Reserva-button {
-        width: 40%; 
+        max-width: 150px; 
         font-size: 1.1em;
     }
 }
@@ -90,7 +91,7 @@
 
 @media (max-width: 576px) {
     .Reserva-form {
-        width: 80%; 
+        width: 80%;
     }
 
     .Reserva-h2 {
@@ -103,8 +104,7 @@
     }
 
     .Reserva-button {
-        width: 50%;
+        max-width: 120px; 
         font-size: 1em;
     }
 }
-
