@@ -1,0 +1,18 @@
+/* global.css o index.css */
+:root {
+    /* Colores Primarios */
+    --color-black: #1e1e1e;
+    --color-beige: #B79C6F;
+    --color-white: #f1f1f1;
+}
+
+
+/* global.css o index.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--color-white); 
+    line-height: 1.5;
+    background-color: var(--color-black);
+  }
+  

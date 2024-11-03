@@ -1,0 +1,75 @@
+.Carta {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Carta-comida,
+.Carta-vinos {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Carta-comidaImg,
+.Carta-vinosImg {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.Carta-comidaImg:hover,
+.Carta-vinosImg:hover {
+    filter: brightness(0.9);
+}
+
+.Carta-comidaH2,
+.Carta-vinosH2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3em;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Ajustes para pantallas de portátiles */
+@media (max-width: 1200px) {
+    .Carta-comidaH2,
+    .Carta-vinosH2 {
+        font-size: 2.5em; /* Reduce el tamaño en pantallas de portátiles */
+    }
+}
+
+/* Ajustes responsivos para tabletas */
+@media (max-width: 768px) {
+    .Carta {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Carta-comida,
+    .Carta-vinos {
+        width: 100%;
+    }
+
+    .Carta-comidaH2,
+    .Carta-vinosH2 {
+        font-size: 2em; /* Reduce el tamaño del texto en pantallas de tabletas */
+    }
+}
+
+/* Ajustes para pantallas de móviles pequeños */
+@media (max-width: 480px) {
+    .Carta-comidaH2,
+    .Carta-vinosH2 {
+        font-size: 1.5em; /* Reduce aún más el tamaño del texto en móviles pequeños */
+    }
+}
+
+

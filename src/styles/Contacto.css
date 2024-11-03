@@ -1,0 +1,98 @@
+/* Estilos generales */
+.Contacto {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: row;
+}
+
+.Contacto-img {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/contacto.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Contacto-info {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.Contacto-infoH2 {
+    font-size: 3em;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Contacto-infoP {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.Separador {
+    width: 120%;
+    height: 1px;
+    background-color: var(--color-white);
+}
+
+.bi {
+    width: 0.7em;
+    height: 0.7em;
+}
+
+/* Ajustes para pantallas medianas (tablets, portátiles pequeños) */
+@media (max-width: 992px) {
+    .Contacto {
+        flex-direction: column; /* Cambia a una sola columna */
+        height: auto; /* Permite que el contenedor se ajuste automáticamente */
+    }
+
+    .Contacto-img, .Contacto-info {
+        width: 100%; /* La imagen y el contenido ocupan el 100% del ancho */
+        height: 50vh; /* Mantiene la imagen y el contenido a la mitad del alto original */
+    }
+
+    .Contacto-infoH2 {
+        font-size: 2.5em;
+    }
+
+    .Contacto-infoP {
+        font-size: 1.2em;
+    }
+
+    .Separador {
+        width: 100%;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .Contacto-infoH2 {
+        font-size: 2em;
+    }
+
+    .Contacto-infoP {
+        font-size: 1em;
+    }
+
+    .bi {
+        width: 1em;
+        height: 1em;
+    }
+
+    .Separador {
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,92 @@
+.icon {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.Header-icon {
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    z-index: 2;
+}
+
+.Menu-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    list-style: none;
+    font-size: 2em;
+    align-items: center; 
+}
+
+.Header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none; 
+}
+
+.Header-menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all; 
+}
+
+.Header-menu.close {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none; 
+}
+
+.Menu-nav {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.Menu-li {
+    color: white;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Menu-li:hover {
+    transform: scale(1.2);
+}
+
+
+.Close-icon {
+    cursor: pointer;
+    color: white;
+}
+
+.bi-x {
+    width: 2em;
+    height: 2em;
+    color: red;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bi-x:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+

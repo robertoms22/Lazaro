@@ -1,0 +1,96 @@
+/* Estilos generales */
+.Catering {
+    width: 100%;
+    min-height: 80vh;
+    background-color: var(--color-black); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 2em;
+    padding: 5em 0;
+}
+
+.Catering-h2 h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.Catering-div {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+}
+
+.Catering-grid {
+    cursor: pointer;
+    transition: transform 400ms ease; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Catering-grid:hover {
+    transform: scale(1.05);
+}
+
+.Catering-gridImg {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.img1 { background-image: url('/assets/catering1.webp'); }
+.img2 { background-image: url('/assets/catering2.webp'); }
+.img3 { background-image: url('/assets/catering3.webp'); }
+.img4 { background-image: url('/assets/catering4.webp'); }
+
+.Catering-gridText {
+    width: 100%;
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.Catering-gridTextP {
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 1200px) {
+    .Catering-div {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Catering-gridImg {
+        height: 180px;
+    }
+
+    .Catering-gridTextP {
+        font-size: 1.1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Catering-div {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .Catering-gridImg {
+        height: 160px;
+    }
+
+    .Catering-gridTextP {
+        font-size: 1em;
+    }
+}

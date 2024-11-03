@@ -1,0 +1,110 @@
+/* Estilos generales */
+.Reserva {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.Reserva-h2 {
+    font-size: 3em;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Reserva-form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.Reserva-formGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Reserva-formGroup label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #949494;
+}
+
+.Reserva-formGroup input,
+.Reserva-formGroup textarea {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+    color: #333;
+}
+
+.Reserva-button {
+    width: 20%;
+    padding: 0.75em;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: var(--color-black);
+    border: 2px solid var(--color-white);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Reserva-button:hover {
+    transform: scale(1.05);
+}
+
+.Reserva-formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+@media (max-width: 992px) {
+    .Reserva-form {
+        width: 50%;
+    }
+
+    .Reserva-h2 {
+        font-size: 2.5em;
+    }
+
+    .Reserva-formGroup input,
+    .Reserva-formGroup textarea {
+        font-size: 0.9em;
+    }
+
+    .Reserva-button {
+        width: 40%; 
+        font-size: 1.1em;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .Reserva-form {
+        width: 80%; 
+    }
+
+    .Reserva-h2 {
+        font-size: 2em;
+    }
+
+    .Reserva-formGroup input,
+    .Reserva-formGroup textarea {
+        font-size: 0.85em;
+    }
+
+    .Reserva-button {
+        width: 50%;
+        font-size: 1em;
+    }
+}
+
